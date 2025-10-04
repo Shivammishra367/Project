@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Feedback System | SRIIT Banmore</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-top">
+            <div class="logo-container">
+                <img src="sriit.webp" alt="SRIIT Logo" class="logo">
+                <div class="institute-name">
+                    <h1>Shri Ram Institute of Information Technology</h1>
+                    <span>Banmore, Gwalior (Madhya Pradesh)</span>
+                </div>
+            </div>
+            <div class="header-contact">
+                <div>
+                    <i class="fas fa-envelope"></i>
+                    <span>info@sriitbanmore.edu.in</span>
+                </div>
+                <div>
+                    <i class="fas fa-phone-alt"></i>
+                    <span>+91-9755265202</span>
+                </div>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+            </div>
+        </div>
+        <nav>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#academics">Academics</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2>Teacher Feedback System</h2>
+            <p>Share your valuable feedback to help us improve teaching quality and learning experience</p>
+            <a href="#feedback" class="cta-button">Submit Feedback Now</a>
+        </div>
+    </section>
+
+    <!-- Academics Section -->
+    <section id="academics">
+        <div class="section-title">
+            <h2>Academics</h2>
+            <p>Explore our comprehensive academic programs and curriculum</p>
+        </div>
+
+        <div class="academics-container">
+            <!-- Programs Offered -->
+            <div class="academics-card">
+                <h3><i class="fas fa-graduation-cap"></i> Programs Offered</h3>
+                <div class="programs-grid">
+                    <div class="program-item">
+                        <h4>Bachelor of Technology (B.Tech)</h4>
+                        <ul>
+                            <li>Computer Science & Engineering</li>
+                            <li>Information Technology</li>
+                            <li>Electronics & Communication</li>
+                            <li>Mechanical Engineering</li>
+                            <li>Civil Engineering</li>
+                        </ul>
+                    </div>
+                    <div class="program-item">
+                        <h4>Master of Technology (M.Tech)</h4>
+                        <ul>
+                            <li>Computer Science & Engineering</li>
+                            <li>Digital Communication</li>
+                            <li>Structural Engineering</li>
+                        </ul>
+                    </div>
+                    <div class="program-item">
+                        <h4>Other Programs</h4>
+                        <ul>
+                            <li>Bachelor of Computer Applications (BCA)</li>
+                            <li>Master of Computer Applications (MCA)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Academic Calendar -->
+            <div class="academics-card">
+                <h3><i class="fas fa-calendar-alt"></i> Academic Calendar 2023-24</h3>
+                <div class="calendar-timeline">
+                    <div class="semester">
+                        <h4>Odd Semester (July - December)</h4>
+                        <ul>
+                            <li>Commencement of Classes: July 15, 2023</li>
+                            <li>Mid-Semester Exams: September 15-30, 2023</li>
+                            <li>End-Semester Exams: December 1-20, 2023</li>
+                            <li>Winter Break: December 21 - January 5</li>
+                        </ul>
+                    </div>
+                    <div class="semester">
+                        <h4>Even Semester (January - June)</h4>
+                        <ul>
+                            <li>Commencement of Classes: January 6, 2024</li>
+                            <li>Mid-Semester Exams: March 1-15, 2024</li>
+                            <li>End-Semester Exams: May 15 - June 5, 2024</li>
+                            <li>Summer Break: June 6 - July 14, 2024</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Departments -->
+            <div class="academics-card">
+                <h3><i class="fas fa-building"></i> Departments</h3>
+                <div class="departments-grid">
+                    <div class="department">
+                        <i class="fas fa-laptop-code"></i>
+                        <h4>Computer Science & Engineering</h4>
+                        <p>Advanced computing, AI, Machine Learning, and Software Engineering</p>
+                    </div>
+                    <div class="department">
+                        <i class="fas fa-network-wired"></i>
+                        <h4>Information Technology</h4>
+                        <p>Networking, Database Systems, and Web Technologies</p>
+                    </div>
+                    <div class="department">
+                        <i class="fas fa-microchip"></i>
+                        <h4>Electronics & Communication</h4>
+                        <p>VLSI Design, Embedded Systems, and Communication Engineering</p>
+                    </div>
+                    <div class="department">
+                        <i class="fas fa-cogs"></i>
+                        <h4>Mechanical Engineering</h4>
+                        <p>Thermodynamics, Manufacturing, and Robotics</p>
+                    </div>
+                    <div class="department">
+                        <i class="fas fa-hard-hat"></i>
+                        <h4>Civil Engineering</h4>
+                        <p>Structural Engineering and Construction Management</p>
+                    </div>
+                    <div class="department">
+                        <i class="fas fa-flask"></i>
+                        <h4>Applied Sciences</h4>
+                        <p>Physics, Chemistry, Mathematics, and Humanities</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Labs & Facilities -->
+            <div class="academics-card">
+                <h3><i class="fas fa-flask"></i> Laboratories & Facilities</h3>
+                <div class="facilities-grid">
+                    <div class="facility">
+                        <h4>Computer Labs</h4>
+                        <ul>
+                            <li>Programming Lab</li>
+                            <li>Database Management Lab</li>
+                            <li>Network Security Lab</li>
+                            <li>AI & ML Lab</li>
+                        </ul>
+                    </div>
+                    <div class="facility">
+                        <h4>Engineering Labs</h4>
+                        <ul>
+                            <li>Electronics Lab</li>
+                            <li>Digital Systems Lab</li>
+                            <li>Mechanical Workshop</li>
+                            <li>Civil Engineering Lab</li>
+                        </ul>
+                    </div>
+                    <div class="facility">
+                        <h4>Research Facilities</h4>
+                        <ul>
+                            <li>Research & Development Center</li>
+                            <li>Innovation Cell</li>
+                            <li>Project Lab</li>
+                            <li>Library with Digital Resources</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Examination System -->
+            <div class="academics-card">
+                <h3><i class="fas fa-file-alt"></i> Examination System</h3>
+                <div class="exam-info">
+                    <div class="exam-item">
+                        <h4>Continuous Evaluation</h4>
+                        <p>Our evaluation system includes:</p>
+                        <ul>
+                            <li>Internal Assessments (30%)</li>
+                            <li>Practical Examinations</li>
+                            <li>Project Work</li>
+                            <li>End-Semester Exams (70%)</li>
+                        </ul>
+                    </div>
+                    <div class="exam-item">
+                        <h4>Grading System</h4>
+                        <ul>
+                            <li>O (Outstanding): 10 points</li>
+                            <li>A+ (Excellent): 9 points</li>
+                            <li>A (Very Good): 8 points</li>
+                            <li>B+ (Good): 7 points</li>
+                            <li>B (Above Average): 6 points</li>
+                            <li>C (Average): 5 points</li>
+                            <li>P (Pass): 4 points</li>
+                            <li>F (Fail): 0 points</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Features Section -->
+        <section id="about">
+            <div class="section-title">
+                <h2>Why Your Feedback Matters</h2>
+                <p>Your constructive feedback helps us maintain high standards of education and improve the learning
+                    environment</p>
+            </div>
+            <div class="features">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3>Improve Teaching Methods</h3>
+                    <p>Help instructors refine their teaching approaches based on student perspectives</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Enhance Learning Experience</h3>
+                    <p>Contribute to creating a better educational environment for all students</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Drive Institutional Growth</h3>
+                    <p>Your input helps the institution identify areas for improvement and growth</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feedback Section -->
+        <section id="feedback">
+            <div class="section-title">
+                <h2>Teacher Feedback Form</h2>
+                <p>Provide honest and constructive feedback about your teachers</p>
+            </div>
+
+            <div class="feedback-section">
+                <div class="feedback-header">
+                    <h2><i class="fas fa-comment-dots"></i> Feedback Form</h2>
+                </div>
+                <div class="feedback-content">
+                    <div>
+                        <form id="feedbackForm">
+                            <div class="form-group">
+                                <label for="teacherName">Teacher's Name</label>
+                                <input type="text" id="teacherName" class="form-control"
+                                    placeholder="Enter teacher's name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <select id="subject" class="form-control" required>
+                                    <option value="">Select Subject</option>
+                                    <option>Engineering Mathematics</option>
+                                    <option>Mathematics-2</option>
+                                    <option>Mathematics-3</option>
+                                    <option>Discrete Structure</option>
+                                    <option>BEEE</option>
+                                    <option>BME</option>
+                                    <option>Engineering Graphics</option>
+                                    <option>Digital System</option>
+                                    <option>Physics</option>
+                                    <option>Chemistry</option>
+                                    <option>English Communication</option>
+                                    <option>Machine Learning</option>
+                                    <option>Theory Of Computation</option>
+                                    <option>Compiler Design</option>
+                                    <option>Software Architecture</option>
+                                    <option>Object Oriented Programming</option>
+                                    <option>Operating System</option>
+                                    <option>Big Data</option>
+                                    <option>Data Mining</option>
+                                    <option>Computational Intelligence</option>
+                                    <option>Data Structure</option>
+                                    <option>Computer Organisation & Architecture</option>
+                                    <option>Energy & Enviornmental Engineering</option>
+                                    <option>Cyber Security</option>
+                                    <option>DBMS</option>
+                                    <option>Software Engineering</option>
+                                    <option>Agile Software Development</option>
+                                    <option>Wireless & Mobile Computing</option>
+                                    <option>Deep & Reinforcement Learning</option>
+                                    <option>Cryptography & Information Security</option>
+                                    <option>Disaster Management</option>
+                                    <option>Internet Of Things</option>
+                                    <option>Cloud Computing</option>
+                                    <option>High Performance Computing</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Teaching Effectiveness</label>
+                                <div class="rating-group">
+                                    <div class="rating-option">
+                                        <input type="radio" id="effectiveness1" name="effectiveness" value="1">
+                                        <label for="effectiveness1">
+                                            <span class="emoji">😞</span>
+                                            <span class="rating-text">Poor</span>
+                                        </label>
+                                    </div>
+                                    <div class="rating-option">
+                                        <input type="radio" id="effectiveness2" name="effectiveness" value="2">
+                                        <label for="effectiveness2">
+                                            <span class="emoji">😐</span>
+                                            <span class="rating-text">Fair</span>
+                                        </label>
+                                    </div>
+                                    <div class="rating-option">
+                                        <input type="radio" id="effectiveness3" name="effectiveness" value="3" checked>
+                                        <label for="effectiveness3">
+                                            <span class="emoji">😊</span>
+                                            <span class="rating-text">Good</span>
+                                        </label>
+                                    </div>
+                                    <div class="rating-option">
+                                        <input type="radio" id="effectiveness4" name="effectiveness" value="4">
+                                        <label for="effectiveness4">
+                                            <span class="emoji">😄</span>
+                                            <span class="rating-text">Very Good</span>
+                                        </label>
+                                    </div>
+                                    <div class="rating-option">
+                                        <input type="radio" id="effectiveness5" name="effectiveness" value="5">
+                                        <label for="effectiveness5">
+                                            <span class="emoji">🤩</span>
+                                            <span class="rating-text">Excellent</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Communication Skills</label>
+                                <div class="rating-group">
+                                    <div class="rating-option">
+                                        <input type="radio" id="communication1" name="communication" value="1">
+                                        <label for="communication1">
+                                            <span class="emoji">😞</span>
+                                            <span class="rating-text">Poor</span>
+                                        </label>
+                                    </div>
+                                    <div class="rating-option">
+                                        <input type="radio" id="communication2" name="communication" value="2">
+                                        <label for="communication2">
+                                            <span class="emoji">😐</span>
+                                            <span class="rating-text">Fair</span>
+                                        </label>
+                                    </div>
+                                    <div class="rating-option">
+                                        <input type="radio" id="communication3" name="communication" value="3" checked>
+                                        <label for="communication3">
+                                            <span class="emoji">😊</span>
+                                            <span class="rating-text">Good</span>
+                                        </label>
+                                    </div>
+                                    <div class="rating-option">
+                                        <input type="radio" id="communication4" name="communication" value="4">
+                                        <label for="communication4">
+                                            <span class="emoji">😄</span>
+                                            <span class="rating-text">Very Good</span>
+                                        </label>
+                                    </div>
+                                    <div class="rating-option">
+                                        <input type="radio" id="communication5" name="communication" value="5">
+                                        <label for="communication5">
+                                            <span class="emoji">🤩</span>
+                                            <span class="rating-text">Excellent</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Subject Knowledge</label>
+                                <div class="rating-group">
+                                    <div class="rating-option">
+                                        <input type="radio" id="knowledge1" name="knowledge" value="1">
+                                        <label for="knowledge1">
+                                            <span class="emoji">😞</span>
+                                            <span class="rating-text">Poor</span>
+                                        </label>
+                                    </div>
+                                    <div class="rating-option">
+                                        <input type="radio" id="knowledge2" name="knowledge" value="2">
+                                        <label for="knowledge2">
+                                            <span class="emoji">😐</span>
+                                            <span class="rating-text">Fair</span>
+                                        </label>
+                                    </div>
+                                    <div class="rating-option">
+                                        <input type="radio" id="knowledge3" name="knowledge" value="3" checked>
+                                        <label for="knowledge3">
+                                            <span class="emoji">😊</span>
+                                            <span class="rating-text">Good</span>
+                                        </label>
+                                    </div>
+                                    <div class="rating-option">
+                                        <input type="radio" id="knowledge4" name="knowledge" value="4">
+                                        <label for="knowledge4">
+                                            <span class="emoji">😄</span>
+                                            <span class="rating-text">Very Good</span>
+                                        </label>
+                                    </div>
+                                    <div class="rating-option">
+                                        <input type="radio" id="knowledge5" name="knowledge" value="5">
+                                        <label for="knowledge5">
+                                            <span class="emoji">🤩</span>
+                                            <span class="rating-text">Excellent</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Classroom Management</label>
+                                <div class="rating-group">
+                                    <div class="rating-option">
+                                        <input type="radio" id="management1" name="management" value="1">
+                                        <label for="management1">
+                                            <span class="emoji">😞</span>
+                                            <span class="rating-text">Poor</span>
+                                        </label>
+                                    </div>
+                                    <div class="rating-option">
+                                        <input type="radio" id="management2" name="management" value="2">
+                                        <label for="management2">
+                                            <span class="emoji">😐</span>
+                                            <span class="rating-text">Fair</span>
+                                        </label>
+                                    </div>
+                                    <div class="rating-option">
+                                        <input type="radio" id="management3" name="management" value="3" checked>
+                                        <label for="management3">
+                                            <span class="emoji">😊</span>
+                                            <span class="rating-text">Good</span>
+                                        </label>
+                                    </div>
+                                    <div class="rating-option">
+                                        <input type="radio" id="management4" name="management" value="4">
+                                        <label for="management4">
+                                            <span class="emoji">😄</span>
+                                            <span class="rating-text">Very Good</span>
+                                        </label>
+                                    </div>
+                                    <div class="rating-option">
+                                        <input type="radio" id="management5" name="management" value="5">
+                                        <label for="management5">
+                                            <span class="emoji">🤩</span>
+                                            <span class="rating-text">Excellent</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Punctuality & Regularity</label>
+                                <div class="rating-group">
+                                    <div class="rating-option">
+                                        <input type="radio" id="punctuality1" name="punctuality" value="1">
+                                        <label for="punctuality1">
+                                            <span class="emoji">😞</span>
+                                            <span class="rating-text">Poor</span>
+                                        </label>
+                                    </div>
+                                    <div class="rating-option">
+                                        <input type="radio" id="punctuality2" name="punctuality" value="2">
+                                        <label for="punctuality2">
+                                            <span class="emoji">😐</span>
+                                            <span class="rating-text">Fair</span>
+                                        </label>
+                                    </div>
+                                    <div class="rating-option">
+                                        <input type="radio" id="punctuality3" name="punctuality" value="3" checked>
+                                        <label for="punctuality3">
+                                            <span class="emoji">😊</span>
+                                            <span class="rating-text">Good</span>
+                                        </label>
+                                    </div>
+                                    <div class="rating-option">
+                                        <input type="radio" id="punctuality4" name="punctuality" value="4">
+                                        <label for="punctuality4">
+                                            <span class="emoji">😄</span>
+                                            <span class="rating-text">Very Good</span>
+                                        </label>
+                                    </div>
+                                    <div class="rating-option">
+                                        <input type="radio" id="punctuality5" name="punctuality" value="5">
+                                        <label for="punctuality5">
+                                            <span class="emoji">🤩</span>
+                                            <span class="rating-text">Excellent</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Student Support & Guidance</label>
+                                <div class="rating-group">
+                                    <div class="rating-option">
+                                        <input type="radio" id="support1" name="support" value="1">
+                                        <label for="support1">
+                                            <span class="emoji">😞</span>
+                                            <span class="rating-text">Poor</span>
+                                        </label>
+                                    </div>
+                                    <div class="rating-option">
+                                        <input type="radio" id="support2" name="support" value="2">
+                                        <label for="support2">
+                                            <span class="emoji">😐</span>
+                                            <span class="rating-text">Fair</span>
+                                        </label>
+                                    </div>
+                                    <div class="rating-option">
+                                        <input type="radio" id="support3" name="support" value="3" checked>
+                                        <label for="support3">
+                                            <span class="emoji">😊</span>
+                                            <span class="rating-text">Good</span>
+                                        </label>
+                                    </div>
+                                    <div class="rating-option">
+                                        <input type="radio" id="support4" name="support" value="4">
+                                        <label for="support4">
+                                            <span class="emoji">😄</span>
+                                            <span class="rating-text">Very Good</span>
+                                        </label>
+                                    </div>
+                                    <div class="rating-option">
+                                        <input type="radio" id="support5" name="support" value="5">
+                                        <label for="support5">
+                                            <span class="emoji">🤩</span>
+                                            <span class="rating-text">Excellent</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Use of Teaching Aids</label>
+                                <div class="rating-group">
+                                    <div class="rating-option">
+                                        <input type="radio" id="aids1" name="aids" value="1">
+                                        <label for="aids1">
+                                            <span class="emoji">😞</span>
+                                            <span class="rating-text">Poor</span>
+                                        </label>
+                                    </div>
+                                    <div class="rating-option">
+                                        <input type="radio" id="aids2" name="aids" value="2">
+                                        <label for="aids2">
+                                            <span class="emoji">😐</span>
+                                            <span class="rating-text">Fair</span>
+                                        </label>
+                                    </div>
+                                    <div class="rating-option">
+                                        <input type="radio" id="aids3" name="aids" value="3" checked>
+                                        <label for="aids3">
+                                            <span class="emoji">😊</span>
+                                            <span class="rating-text">Good</span>
+                                        </label>
+                                    </div>
+                                    <div class="rating-option">
+                                        <input type="radio" id="aids4" name="aids" value="4">
+                                        <label for="aids4">
+                                            <span class="emoji">😄</span>
+                                            <span class="rating-text">Very Good</span>
+                                        </label>
+                                    </div>
+                                    <div class="rating-option">
+                                        <input type="radio" id="aids5" name="aids" value="5">
+                                        <label for="aids5">
+                                            <span class="emoji">🤩</span>
+                                            <span class="rating-text">Excellent</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Overall Satisfaction</label>
+                                <div class="rating-group">
+                                    <div class="rating-option">
+                                        <input type="radio" id="satisfaction1" name="satisfaction" value="1">
+                                        <label for="satisfaction1">
+                                            <span class="emoji">😞</span>
+                                            <span class="rating-text">Poor</span>
+                                        </label>
+                                    </div>
+                                    <div class="rating-option">
+                                        <input type="radio" id="satisfaction2" name="satisfaction" value="2">
+                                        <label for="satisfaction2">
+                                            <span class="emoji">😐</span>
+                                            <span class="rating-text">Fair</span>
+                                        </label>
+                                    </div>
+                                    <div class="rating-option">
+                                        <input type="radio" id="satisfaction3" name="satisfaction" value="3" checked>
+                                        <label for="satisfaction3">
+                                            <span class="emoji">😊</span>
+                                            <span class="rating-text">Good</span>
+                                        </label>
+                                    </div>
+                                    <div class="rating-option">
+                                        <input type="radio" id="satisfaction4" name="satisfaction" value="4">
+                                        <label for="satisfaction4">
+                                            <span class="emoji">😄</span>
+                                            <span class="rating-text">Very Good</span>
+                                        </label>
+                                    </div>
+                                    <div class="rating-option">
+                                        <input type="radio" id="satisfaction5" name="satisfaction" value="5">
+                                        <label for="satisfaction5">
+                                            <span class="emoji">🤩</span>
+                                            <span class="rating-text">Excellent</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="comments">Additional Comments</label>
+                                <textarea id="comments" class="form-control" rows="4"
+                                    placeholder="Provide specific feedback or suggestions..." required></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <button type="submit" class="btn">
+                                    <i class="fas fa-paper-plane"></i> Submit Feedback
+                                </button>
+                                <button type="button" id="clearForm" class="btn btn-secondary">
+                                    <i class="fas fa-eraser"></i> Clear Form
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div>
+                        <div class="feedback-list">
+                            <div class="list-header">
+                                <h3>Recent Feedbacks</h3>
+                                <button id="clearAll" class="btn-2 btn-danger">
+                                    <i class="fas fa-trash"></i> Clear All
+                                </button>
+                            </div>
+                            <div class="list-content" id="feedbackList">
+                                <div class="empty-state">
+                                    <i class="fas fa-inbox"
+                                        style="font-size: 3rem; margin-bottom: 1rem; opacity: 0.5;"></i>
+                                    <p>No feedback submitted yet</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+                <p>Get in touch with us for any queries or additional information</p>
+            </div>
+            <div class="contact-section">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="contact-item-content">
+                            <h4>Campus Address</h4>
+                            <p>National Expressway, Opposite Narrow Gauge Railway Station, Banmore, Madhya Pradesh
+                                476444</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-building"></i>
+                        <div class="contact-item-content">
+                            <h4>Head Office</h4>
+                            <p>4th Floor, Alaknanda Tower, City Center, Gwalior, Madhya Pradesh 474011</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div class="contact-item-content">
+                            <h4>Contact Numbers</h4>
+                            <p>+91 9109035202<br>+91 9755265202</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="contact-item-content">
+                            <h4>Email Address</h4>
+                            <p class="email-links">
+                                <a
+                                    href="mailto:registrarsrgoc@shriraminstitute.ac.in">registrarsrgoc@shriraminstitute.ac.in</a>
+                                <a
+                                    href="mailto:counsellingsrgoc@shriraminstitute.ac.in">counsellingsrgoc@shriraminstitute.ac.in</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send us a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" class="form-control" placeholder="Enter your full name"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" class="form-control" placeholder="Enter your email address"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" class="form-control" rows="4"
+                                placeholder="Enter your message here..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#about"><i class="fas fa-info-circle"></i> About Us</a></li>
+                    <li><a href="#academics"><i class="fas fa-graduation-cap"></i> Academics</a></li>
+                    <li><a href="#feedback"><i class="fas fa-user-graduate"></i> Feedback</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contact Info</h3>
+                <div class="contact-info-footer">
+                    <div class="contact-item-footer">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Campus Address</strong>
+                            <p>National Expressway, Banmore, MP 476444</p>
+                        </div>
+                    </div>
+                    <div class="contact-item-footer">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Phone Numbers</strong>
+                            <p>+91 9109035202<br>+91 9755265202</p>
+                        </div>
+                    </div>
+                    <div class="contact-item-footer">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email Address</strong>
+                            <p class="footer-email">registrarsrgoc@shriraminstitute.ac.in</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h3>Connect With Us</h3>
+                <p style="color: rgba(255,255,255,0.8); margin-bottom: 1rem;">Follow us on social media for updates and
+                    announcements</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/share/19mvsVMNM1/" class="social-link" title="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <!-- <a href="#" class="social-link" title="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a> -->
+                    <a href="#" class="social-link" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.instagram.com/shriramgroupofcolleges_?igsh=eG5xcTA1NDA1OXBr"
+                        class="social-link" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@shriramgroupofcolleges-g3i" class="social-link" title="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+
+                <div style="margin-top: 2rem; padding: 1rem; background: rgba(255,255,255,0.05); border-radius: 8px;">
+                    <h4 style="color: var(--accent); margin-bottom: 0.5rem; font-size: 1rem;">Visit Our Campus</h4>
+                    <p style="color: rgba(255,255,255,0.8); font-size: 0.9rem; line-height: 1.5;">
+                        Experience world-class education at our state-of-the-art campus in Banmore
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2023 Shri Ram Institute of Information Technology, Banmore. All Rights Reserved.</p>
+            <p>Designed with <i class="fas fa-heart heart"></i> by Shivam Mishra</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
